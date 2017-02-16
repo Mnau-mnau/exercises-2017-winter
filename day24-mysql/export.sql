@@ -5,6 +5,9 @@ SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
+CREATE DATABASE `bootcamp_eshop` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `bootcamp_eshop`;
+
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -16,9 +19,9 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `orders` (`id`, `user_id`, `created`) VALUES
-(1,	1,	'2017-02-09 16:46:06'),
-(2,	1,	'2017-02-09 16:57:08'),
-(3,	1,	'2017-02-09 16:57:38');
+(1, 1,  '2017-02-09 16:46:06'),
+(2, 1,  '2017-02-09 16:57:08'),
+(3, 1,  '2017-02-09 16:57:38');
 
 DROP TABLE IF EXISTS `orders_have_products`;
 CREATE TABLE `orders_have_products` (
@@ -33,7 +36,7 @@ CREATE TABLE `orders_have_products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `orders_have_products` (`id`, `order_id`, `product_id`) VALUES
-(1,	3,	3);
+(1, 3,  3);
 
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
@@ -46,9 +49,9 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `products` (`id`, `name`, `price`, `size`, `color`) VALUES
-(1,	'name',	123.00,	'size',	'color'),
-(2,	'ewrwer',	123.00,	'3214324',	'324324'),
-(3,	'e',	433.00,	'12',	'234');
+(1, 'name', 123.00, 'size', 'color'),
+(2, 'ewrwer', 123.00, '3214324',  '324324'),
+(3, 'e',  433.00, '12', '234');
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -60,6 +63,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
-(1,	'foo@bar.org',	'',	'Foo Bar');
+(1, 'foo@bar.org',  '', 'Foo Bar');
 
--- 2017-02-16 09:03:51
+-- 2017-02-16 09:06:46
