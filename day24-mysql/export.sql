@@ -62,6 +62,8 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+ALTER TABLE `users` ADD UNIQUE `email` (`email`);
+
 INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
 (1, 'foo@bar.org',  '', 'Foo Bar');
 
