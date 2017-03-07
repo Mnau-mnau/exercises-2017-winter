@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font-size: 30px;
+    font-family: "Segoe UI", Helvetica, sans-serif;
+}
+
+.test-froggy,
+.test-ok {
+    display: none;
+    font-size: 300px;
+    line-height: 1;
+    margin: 0;
+}
+
+.test-ok {
+    display: block;
+}
