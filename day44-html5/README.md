@@ -30,4 +30,4 @@ Go to http://localhost:4050/day44-html5/
 
 You should see ✔️ and no Froggy.
 
-That means you're done and should go to bed.
+That means you're done and should go to bed or have 🍺 or whatever you like to do.
