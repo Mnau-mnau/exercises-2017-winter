@@ -24,7 +24,7 @@ gulp.task('csscompile', ['cssclean'], function(){
 		.pipe(browserSync.stream());
 });
 
-gulp.task('develop', function(){
+gulp.task('develop',['csscompile'], function(){
 	browserSync.init({
 		proxy: {
 			target: 'http://www.cbp-exercises.local'
@@ -39,6 +39,5 @@ gulp.task('develop', function(){
 	gulp.watch('src/*.scss', ['csscompile']);
 });
 
-gulp.task('distprep', ['csscompile']);
 
 gulp.task('default', ['develop']);
